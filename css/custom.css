@@ -1,0 +1,71 @@
+.CoverPhoto {
+-webkit-filter: blur(5px);
+-moz-filter: blur(5px);
+-o-filter: blur(5px);
+-ms-filter: blur(5px);
+}
+
+.TeamPhoto {
+    opacity: .7;
+-webkit-filter: blur(2px);
+-moz-filter: blur(2px);
+-o-filter: blur(2px);
+-ms-filter: blur(2px);
+}
+
+.Logo {
+    height: 100%;
+}
+
+.NavColor {
+    color: #4FC3F7;
+}
+
+.TeamPhoto:hover {
+    opacity: 1;
+    -webkit-transition: opacity .75s ease-in-out;
+    -moz-transition: opacity .75s ease-in-out;
+    -o-transition: opacity .75s ease-in-out;
+    -ms-transition: opacity .75s ease-in-out;
+    
+        -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -o-filter: blur(0px);
+    -ms-filter: blur(0px);
+}
+
+.BGBody {
+    background-color: #4fc3f7;
+}
+
+.BGBodyT {
+    background-color: white;
+}
+
+.ArticleText {
+    text-indent: 50px;
+    font-size: 16;
+    white-space: pre-wrap;
+}
+
+
+html, body {height: 100%;}
+
+#wrap {min-height: 100%;}
+
+#main {overflow:auto;
+	padding-bottom: 150px;}  /* must be same height as the footer */
+
+#footer {position: relative;
+	margin-top: -150px; /* negative value of footer height */
+	height: 150px;
+	clear:both;} 
+
+/*Opera Fix*/
+body:before {
+	content:"";
+	height:100%;
+	float:left;
+	width:0;
+	margin-top:-32767px;/
+}
